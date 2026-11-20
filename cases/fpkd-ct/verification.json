@@ -1,0 +1,36 @@
+{
+  "mechanical_pass": true,
+  "errors": [],
+  "registered_evidence": 17,
+  "registered_claims": 8,
+  "verified_calculations": [
+    {
+      "claim": "C002",
+      "operation": "difference",
+      "actual": "0.0013309624261381",
+      "expected": "0.001331",
+      "tolerance": "5E-7"
+    },
+    {
+      "claim": "C003",
+      "operation": "difference",
+      "actual": "-0.02355913875161",
+      "expected": "-0.023559",
+      "tolerance": "5E-7"
+    },
+    {
+      "claim": "C004",
+      "operation": "difference",
+      "actual": "0.0000506307988164775",
+      "expected": "0.000050631",
+      "tolerance": "5E-10"
+    }
+  ],
+  "input_artifact_sha256": {
+    "manifest.json": "96ae174d69f756f6d24530a95aeb38a73764053b1d1c03e1fe0d408091315339",
+    "evidence.json": "63cb68bcebe6683076c251d9f8f84e747f9689eca8c788194facdf440e41c4f7",
+    "draft.md": "7ae957d911585c03d5ef8584514ffa544462534b7d52557df5236b9a245a8361"
+  },
+  "limits": "Checks declared locators, values and calculations only; not scientific truth or full-text coverage.",
+  "checked_at_utc": "2026-11-20T12:52:06.957495+00:00"
+}

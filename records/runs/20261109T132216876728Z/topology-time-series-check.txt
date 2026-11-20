@@ -1,0 +1,28 @@
+ARGV: ["D:\\Anaconda3\\python.exe", "-X", "utf8", "scripts/evidence_tools.py", "check", "--sources-root", "cases\\topology-time-series\\input", "--manifest", "cases\\topology-time-series\\manifest.json", "--evidence", "cases\\topology-time-series\\evidence.json", "--draft", "cases\\topology-time-series\\draft.md", "--out", "cases\\topology-time-series\\verification.json"]
+EXIT: 0
+ELAPSED_SECONDS: 0.064612
+STDOUT:
+{
+  "mechanical_pass": true,
+  "errors": [],
+  "registered_evidence": 10,
+  "registered_claims": 4,
+  "verified_calculations": [
+    {
+      "claim": "C002",
+      "operation": "difference",
+      "actual": "0.073195904493332",
+      "expected": "0.073196",
+      "tolerance": "5E-7"
+    }
+  ],
+  "input_artifact_sha256": {
+    "manifest.json": "f779b0f088e99f78e8bc10532f7ad77bac5376d364d1798663c0368347896a68",
+    "evidence.json": "092e682b5a5994275bd924abc76c2507a619c7ff805abbb07c413365c3834cdd",
+    "draft.md": "ea5af751429c04bdb835c712ee0ccc1f9b9383699820277bc5b66ec5ae3ae029"
+  },
+  "limits": "Checks declared locators, values and calculations only; not scientific truth or full-text coverage.",
+  "checked_at_utc": "2026-11-09T13:22:17.258705+00:00"
+}
+
+STDERR:

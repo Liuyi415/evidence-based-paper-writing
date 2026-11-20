@@ -1,0 +1,229 @@
+{
+  "evidence": [
+    {
+      "id": "E001",
+      "path": "project_summary.md",
+      "kind": "text",
+      "line_start": 3,
+      "line_end": 3,
+      "quote": "当前实现使用自监督预训练的DINO作为教师，但学生训练仍有配对NDCT图像L1监督，不能称为纯自监督LDCT去噪。"
+    },
+    {
+      "id": "E002",
+      "path": "summary.json",
+      "kind": "json",
+      "pointer": "/models/C0/metrics_slice_mean/ssim",
+      "value": "0.9321387492196264"
+    },
+    {
+      "id": "E003",
+      "path": "summary.json",
+      "kind": "json",
+      "pointer": "/models/E_PUR_001/metrics_slice_mean/ssim",
+      "value": "0.9334697116457645"
+    },
+    {
+      "id": "E004",
+      "path": "summary.json",
+      "kind": "json",
+      "pointer": "/models/C0/metrics_slice_mean/psnr",
+      "value": "39.38218253263506"
+    },
+    {
+      "id": "E005",
+      "path": "summary.json",
+      "kind": "json",
+      "pointer": "/models/E_PUR_001/metrics_slice_mean/psnr",
+      "value": "39.35862339388345"
+    },
+    {
+      "id": "E006",
+      "path": "summary.json",
+      "kind": "json",
+      "pointer": "/models/C0/metrics_slice_mean/mae",
+      "value": "0.0075180195643985755"
+    },
+    {
+      "id": "E007",
+      "path": "summary.json",
+      "kind": "json",
+      "pointer": "/models/E_PUR_001/metrics_slice_mean/mae",
+      "value": "0.007568650363215053"
+    },
+    {
+      "id": "E008",
+      "path": "summary.json",
+      "kind": "json",
+      "pointer": "/patient_summary/L096/C0/slices",
+      "value": 823
+    },
+    {
+      "id": "E009",
+      "path": "summary.json",
+      "kind": "json",
+      "pointer": "/patient_summary/L109/C0/slices",
+      "value": 318
+    },
+    {
+      "id": "E010",
+      "path": "summary.json",
+      "kind": "json",
+      "pointer": "/models/C0/slices",
+      "value": 1141
+    },
+    {
+      "id": "E011",
+      "path": "summary.json",
+      "kind": "json",
+      "pointer": "/models/A50/metrics_slice_mean/psnr",
+      "value": "39.43725691612307"
+    },
+    {
+      "id": "E012",
+      "path": "summary.json",
+      "kind": "json",
+      "pointer": "/models/A50/metrics_slice_mean/ssim",
+      "value": "0.9333044653984023"
+    },
+    {
+      "id": "E013",
+      "path": "summary.json",
+      "kind": "json",
+      "pointer": "/models/A50/metrics_slice_mean/mae",
+      "value": "0.007498505479686606"
+    },
+    {
+      "id": "E014",
+      "path": "project_summary.md",
+      "kind": "text",
+      "line_start": 3,
+      "line_end": 3,
+      "quote": "L096/L109同属AAPM，且已被开发观察，不是独立来源外部测试。"
+    },
+    {
+      "id": "E015",
+      "path": "project_summary.md",
+      "kind": "text",
+      "line_start": 3,
+      "line_end": 3,
+      "quote": "L333曾在初始A/B阶段评价，目前继续封存；不能宣称其从未被访问。"
+    },
+    {
+      "id": "E016",
+      "path": "summary.json",
+      "kind": "json",
+      "pointer": "/interpretation/limitations",
+      "value": "Only L096/L109 external validation patients; same two patients trained the models; no L333 test access; one seed; metrics use stored intensity and unknown HU mapping; no clinician reader study."
+    },
+    {
+      "id": "E017",
+      "path": "original_report.md",
+      "kind": "text",
+      "line_start": 15,
+      "line_end": 15,
+      "quote": "所有输出为完整切片 float32 推理，不裁剪，data_range=1。"
+    }
+  ],
+  "claims": [
+    {
+      "id": "C001",
+      "text": "当前学生训练包含配对 NDCT 图像的 L1 监督，自监督属性来自 DINO 预训练，因而本例不能称为纯自监督 LDCT 去噪。",
+      "status": "observed",
+      "evidence_ids": [
+        "E001"
+      ]
+    },
+    {
+      "id": "C002",
+      "text": "在 L096/L109 的切片合并均值口径下，E_PUR_001 相对 C0 的 SSIM 增加约 0.001331。",
+      "status": "observed",
+      "evidence_ids": [
+        "E002",
+        "E003"
+      ],
+      "calculation": {
+        "operation": "difference",
+        "inputs": [
+          "E002",
+          "E003"
+        ],
+        "expected": "0.001331",
+        "tolerance": "0.0000005"
+      }
+    },
+    {
+      "id": "C003",
+      "text": "同一口径下，E_PUR_001 相对 C0 的 PSNR 下降约 0.023559 dB。",
+      "status": "observed",
+      "evidence_ids": [
+        "E004",
+        "E005"
+      ],
+      "calculation": {
+        "operation": "difference",
+        "inputs": [
+          "E004",
+          "E005"
+        ],
+        "expected": "-0.023559",
+        "tolerance": "0.0000005"
+      }
+    },
+    {
+      "id": "C004",
+      "text": "同一口径下，E_PUR_001 相对 C0 的 MAE 增加约 0.000050631。",
+      "status": "observed",
+      "evidence_ids": [
+        "E006",
+        "E007"
+      ],
+      "calculation": {
+        "operation": "difference",
+        "inputs": [
+          "E006",
+          "E007"
+        ],
+        "expected": "0.000050631",
+        "tolerance": "0.0000000005"
+      }
+    },
+    {
+      "id": "C005",
+      "text": "该合并口径包括 L096 的 823 张切片和 L109 的 318 张切片，共 1141 张；L096/L109 同属 AAPM 且已被开发观察，应称为同来源未参与训练患者的开发验证。",
+      "status": "observed",
+      "evidence_ids": [
+        "E008",
+        "E009",
+        "E010",
+        "E014"
+      ]
+    },
+    {
+      "id": "C006",
+      "text": "项目记录表明 L333 曾在初始 A/B 阶段评价，当前继续封存，因此不能将本轮未访问写成项目从未访问。",
+      "status": "observed",
+      "evidence_ids": [
+        "E015"
+      ]
+    },
+    {
+      "id": "C007",
+      "text": "同一切片合并口径下，A50 的 PSNR、SSIM、MAE 分别约为 39.437257 dB、0.933304 和 0.007498505，可作为后续比较的空间基线候选。",
+      "status": "observed",
+      "evidence_ids": [
+        "E011",
+        "E012",
+        "E013"
+      ]
+    },
+    {
+      "id": "C008",
+      "text": "本轮材料记录为单种子评价，使用存储强度且 HU 映射未知，也没有医生阅片研究。",
+      "status": "observed",
+      "evidence_ids": [
+        "E016",
+        "E017"
+      ]
+    }
+  ]
+}

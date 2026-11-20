@@ -1,0 +1,11 @@
+{
+  "checked_at_utc": "2026-11-09T13:33:06.460613+00:00",
+  "markdown_links": "all local targets exist",
+  "selected_original_hashes": "13 original/snapshot pairs unchanged",
+  "skill_validation": {
+    "exit_code": 0,
+    "stdout": "Skill is valid!\n",
+    "stderr": ""
+  },
+  "not_validated": "Scientific truth, full-text coverage, precise human writing time, historical PPT contents, remote publication."
+}

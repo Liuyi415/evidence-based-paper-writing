@@ -1,0 +1,129 @@
+{
+  "evidence": [
+    {
+      "id": "E001",
+      "path": "results.json",
+      "kind": "json",
+      "pointer": "/configuration/length",
+      "value": 240
+    },
+    {
+      "id": "E002",
+      "path": "results.json",
+      "kind": "json",
+      "pointer": "/configuration/embedding_dimension",
+      "value": 2
+    },
+    {
+      "id": "E003",
+      "path": "results.json",
+      "kind": "json",
+      "pointer": "/configuration/delay",
+      "value": 10
+    },
+    {
+      "id": "E004",
+      "path": "results.json",
+      "kind": "json",
+      "pointer": "/configuration/max_cloud_points",
+      "value": 80
+    },
+    {
+      "id": "E005",
+      "path": "summary.csv",
+      "kind": "csv",
+      "row": 1,
+      "column": "h1_total_lifetime",
+      "value": "1.62509486079216"
+    },
+    {
+      "id": "E006",
+      "path": "summary.csv",
+      "kind": "csv",
+      "row": 5,
+      "column": "h1_total_lifetime",
+      "value": "1.698290765285492"
+    },
+    {
+      "id": "E007",
+      "path": "summary.csv",
+      "kind": "csv",
+      "row": 5,
+      "column": "finite_h1_count",
+      "value": "16"
+    },
+    {
+      "id": "E008",
+      "path": "summary.csv",
+      "kind": "csv",
+      "row": 5,
+      "column": "period_at_peak_samples",
+      "value": "4.2105263157894735"
+    },
+    {
+      "id": "E009",
+      "path": "original_report.md",
+      "kind": "text",
+      "line_start": 3,
+      "line_end": 3,
+      "quote": "不比较分类或预测性能。"
+    },
+    {
+      "id": "E010",
+      "path": "results.json",
+      "kind": "json",
+      "pointer": "/limitations",
+      "value": "Five synthetic signals; no labels, classifier, statistical inference or real-data validation."
+    }
+  ],
+  "claims": [
+    {
+      "id": "C001",
+      "text": "本例为五种合成信号的结构描述对照，序列长度为 240，延迟嵌入维数为 2、延迟为 10，点云最多取 80 个点。",
+      "status": "observed",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003",
+        "E004",
+        "E010"
+      ]
+    },
+    {
+      "id": "C002",
+      "text": "白噪声的 H1 总寿命约为 1.698291，高于纯正弦的 1.625095，差约为 0.073196；白噪声仍产生 16 个有限 H1 特征。",
+      "status": "observed",
+      "evidence_ids": [
+        "E005",
+        "E006",
+        "E007"
+      ],
+      "calculation": {
+        "operation": "difference",
+        "inputs": [
+          "E005",
+          "E006"
+        ],
+        "expected": "0.073196",
+        "tolerance": "0.0000005"
+      }
+    },
+    {
+      "id": "C003",
+      "text": "白噪声最大谱峰对应约 4.210526 个采样点的周期，该选峰结果不能单独证明信号具有真实周期。",
+      "status": "observed",
+      "evidence_ids": [
+        "E008"
+      ]
+    },
+    {
+      "id": "C004",
+      "text": "这组实验没有比较预测性能，不能据此声称拓扑特征提高了多变量时间序列预测精度。",
+      "status": "observed",
+      "evidence_ids": [
+        "E009",
+        "E010"
+      ]
+    }
+  ]
+}

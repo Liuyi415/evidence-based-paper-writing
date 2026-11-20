@@ -1,0 +1,134 @@
+{
+  "evidence": [
+    {
+      "id": "E001",
+      "path": "decision.json",
+      "kind": "json",
+      "pointer": "/scientific_status",
+      "value": "L310 single-patient method-development descriptive evaluation; not patient-level inference and not final test."
+    },
+    {
+      "id": "E002",
+      "path": "image_metrics.csv",
+      "kind": "csv",
+      "row": 1,
+      "column": "psnr_mean",
+      "value": "34.823811261478426"
+    },
+    {
+      "id": "E003",
+      "path": "image_metrics.csv",
+      "kind": "csv",
+      "row": 2,
+      "column": "psnr_mean",
+      "value": "34.81446829018519"
+    },
+    {
+      "id": "E004",
+      "path": "branch_identity.csv",
+      "kind": "csv",
+      "row": 4,
+      "column": "forward_delta_error_mean",
+      "value": "0.00028196762795228836"
+    },
+    {
+      "id": "E005",
+      "path": "branch_identity.csv",
+      "kind": "csv",
+      "row": 8,
+      "column": "forward_delta_error_mean",
+      "value": "0.00021432832693953893"
+    },
+    {
+      "id": "E006",
+      "path": "branch_identity.csv",
+      "kind": "csv",
+      "row": 4,
+      "column": "n_forward_identity",
+      "value": "239"
+    },
+    {
+      "id": "E007",
+      "path": "branch_identity.csv",
+      "kind": "csv",
+      "row": 8,
+      "column": "n_forward_identity",
+      "value": "239"
+    },
+    {
+      "id": "E008",
+      "path": "image_metrics.csv",
+      "kind": "csv",
+      "row": 1,
+      "column": "n",
+      "value": "533"
+    },
+    {
+      "id": "E009",
+      "path": "frozen_method.md",
+      "kind": "text",
+      "line_start": 8,
+      "line_end": 8,
+      "quote": "L310 - CLOSED FOR METHOD TUNING"
+    }
+  ],
+  "claims": [
+    {
+      "id": "C001",
+      "text": "本例选取 L310 的单患者方法开发描述性评价，图像指标表记录 533 张切片，不构成患者层面的统计推断或最终测试。",
+      "status": "observed",
+      "evidence_ids": [
+        "E001",
+        "E008"
+      ]
+    },
+    {
+      "id": "C002",
+      "text": "GATED_TRUST 的平均 PSNR 约为 34.814468 dB，CONTROL 约为 34.823811 dB，差值约为 -0.009343 dB。",
+      "status": "observed",
+      "evidence_ids": [
+        "E002",
+        "E003"
+      ],
+      "calculation": {
+        "operation": "difference",
+        "inputs": [
+          "E002",
+          "E003"
+        ],
+        "expected": "-0.009343",
+        "tolerance": "0.0000005"
+      }
+    },
+    {
+      "id": "C003",
+      "text": "在 CONTROL-safe、原始 QD Top5 且 forward identity 稳定的 H1 子组中，V1 与 GATED_TRUST 各有 239 个特征；相对 CONTROL 的平均误差增量分别约为 0.000281968 与 0.000214328，后者比前者低约 0.000067639。",
+      "status": "observed",
+      "evidence_ids": [
+        "E004",
+        "E005",
+        "E006",
+        "E007"
+      ],
+      "calculation": {
+        "operation": "difference",
+        "inputs": [
+          "E004",
+          "E005"
+        ],
+        "expected": "-0.000067639",
+        "tolerance": "0.0000000005"
+      }
+    },
+    {
+      "id": "C004",
+      "text": "GATED_TRUST 在该 safe 子组中的误差增量仍为正，本例支持附带误差减少的描述，不支持附带误差已经消除或整体图像质量提高。",
+      "status": "observed",
+      "evidence_ids": [
+        "E003",
+        "E002",
+        "E005"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+ARGV: ["D:\\Anaconda3\\python.exe", "-X", "utf8", "scripts/evidence_tools.py", "inventory", "--sources-root", "cases\\tda-ldct\\input", "--out", "cases\\tda-ldct\\manifest.json"]
+EXIT: 0
+ELAPSED_SECONDS: 0.059556
+STDOUT:
+INVENTORY files=4 output=cases\tda-ldct\manifest.json
+
+STDERR:

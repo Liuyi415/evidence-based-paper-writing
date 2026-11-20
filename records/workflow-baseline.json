@@ -1,0 +1,14 @@
+{
+  "source": "User statement in this chat, 2026-11-09 Asia/Shanghai",
+  "verbatim": "我通常就是一有结果就会复制保存到PPT，然后补充一两句描述，大概就是说明一下这些数据是干啥的，至于具体的数据分析并没有，而且很混乱，到正式写论文的时候又要重头再看不是能直接用那种，之前会花费一两周的时间再重新梳理、整理实验和描述",
+  "frequency": "Whenever new results are produced; no fixed weekly count given.",
+  "prior_steps": [
+    "Copy results to PPT",
+    "Add one or two sentences describing what the data are for",
+    "Revisit and reorganize experiments and descriptions when writing a paper"
+  ],
+  "recalled_reorganization_duration": "One to two weeks, recalled estimate for a writing-preparation stage, not per subsection.",
+  "precise_timer_available": false,
+  "new_workflow_same_scope_duration": null,
+  "last_three_task_dates": "Not individually supplied."
+}

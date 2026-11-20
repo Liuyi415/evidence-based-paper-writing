@@ -1,0 +1,46 @@
+{
+  "reason": "Local-link audit found an original report image missing from the selected snapshot. Copied the original figure byte-for-byte, preserved initial manifest, refreshed only the affected case manifest and check. Scientific evidence/claims unchanged.",
+  "checked_at_utc": "2026-11-09T13:32:02.202905+00:00",
+  "commands": [
+    {
+      "argv": [
+        "D:\\Anaconda3\\python.exe",
+        "-X",
+        "utf8",
+        "scripts/evidence_tools.py",
+        "inventory",
+        "--sources-root",
+        "cases/topology-time-series/input",
+        "--out",
+        "cases/topology-time-series/manifest.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.06074539999826811,
+      "stdout": "INVENTORY files=4 output=cases\\topology-time-series\\manifest.json\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "D:\\Anaconda3\\python.exe",
+        "-X",
+        "utf8",
+        "scripts/evidence_tools.py",
+        "check",
+        "--sources-root",
+        "cases/topology-time-series/input",
+        "--manifest",
+        "cases/topology-time-series/manifest.json",
+        "--evidence",
+        "cases/topology-time-series/evidence.json",
+        "--draft",
+        "cases/topology-time-series/draft.md",
+        "--out",
+        "cases/topology-time-series/verification.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.06425080000190064,
+      "stdout": "{\n  \"mechanical_pass\": true,\n  \"errors\": [],\n  \"registered_evidence\": 10,\n  \"registered_claims\": 4,\n  \"verified_calculations\": [\n    {\n      \"claim\": \"C002\",\n      \"operation\": \"difference\",\n      \"actual\": \"0.073195904493332\",\n      \"expected\": \"0.073196\",\n      \"tolerance\": \"5E-7\"\n    }\n  ],\n  \"input_artifact_sha256\": {\n    \"manifest.json\": \"cf998ad7357ea95459368ec176c435d237d7641d01e432efc7c654f98e099749\",\n    \"evidence.json\": \"092e682b5a5994275bd924abc76c2507a619c7ff805abbb07c413365c3834cdd\",\n    \"draft.md\": \"ea5af751429c04bdb835c712ee0ccc1f9b9383699820277bc5b66ec5ae3ae029\"\n  },\n  \"limits\": \"Checks declared locators, values and calculations only; not scientific truth or full-text coverage.\",\n  \"checked_at_utc\": \"2026-11-09T13:32:02.195590+00:00\"\n}\n",
+      "stderr": ""
+    }
+  ]
+}

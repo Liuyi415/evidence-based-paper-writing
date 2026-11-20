@@ -1,0 +1,92 @@
+{
+  "run_id": "20261120T125206875054Z",
+  "all_passed": true,
+  "scope": "Mechanical replay of existing artifact snapshots; no model training or full writing-time measurement.",
+  "commands": [
+    {
+      "label": "fpkd-ct-check",
+      "argv": [
+        "D:\\Anaconda3\\python.exe",
+        "-X",
+        "utf8",
+        "scripts/evidence_tools.py",
+        "check",
+        "--sources-root",
+        "cases\\fpkd-ct\\input",
+        "--manifest",
+        "cases\\fpkd-ct\\manifest.json",
+        "--evidence",
+        "cases\\fpkd-ct\\evidence.json",
+        "--draft",
+        "cases\\fpkd-ct\\draft.md",
+        "--out",
+        "cases\\fpkd-ct\\verification.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.08983169999919483,
+      "stdout": "{\n  \"mechanical_pass\": true,\n  \"errors\": [],\n  \"registered_evidence\": 17,\n  \"registered_claims\": 8,\n  \"verified_calculations\": [\n    {\n      \"claim\": \"C002\",\n      \"operation\": \"difference\",\n      \"actual\": \"0.0013309624261381\",\n      \"expected\": \"0.001331\",\n      \"tolerance\": \"5E-7\"\n    },\n    {\n      \"claim\": \"C003\",\n      \"operation\": \"difference\",\n      \"actual\": \"-0.02355913875161\",\n      \"expected\": \"-0.023559\",\n      \"tolerance\": \"5E-7\"\n    },\n    {\n      \"claim\": \"C004\",\n      \"operation\": \"difference\",\n      \"actual\": \"0.0000506307988164775\",\n      \"expected\": \"0.000050631\",\n      \"tolerance\": \"5E-10\"\n    }\n  ],\n  \"input_artifact_sha256\": {\n    \"manifest.json\": \"96ae174d69f756f6d24530a95aeb38a73764053b1d1c03e1fe0d408091315339\",\n    \"evidence.json\": \"63cb68bcebe6683076c251d9f8f84e747f9689eca8c788194facdf440e41c4f7\",\n    \"draft.md\": \"7ae957d911585c03d5ef8584514ffa544462534b7d52557df5236b9a245a8361\"\n  },\n  \"limits\": \"Checks declared locators, values and calculations only; not scientific truth or full-text coverage.\",\n  \"checked_at_utc\": \"2026-11-20T12:52:06.957495+00:00\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "label": "tda-ldct-check",
+      "argv": [
+        "D:\\Anaconda3\\python.exe",
+        "-X",
+        "utf8",
+        "scripts/evidence_tools.py",
+        "check",
+        "--sources-root",
+        "cases\\tda-ldct\\input",
+        "--manifest",
+        "cases\\tda-ldct\\manifest.json",
+        "--evidence",
+        "cases\\tda-ldct\\evidence.json",
+        "--draft",
+        "cases\\tda-ldct\\draft.md",
+        "--out",
+        "cases\\tda-ldct\\verification.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.06537140000000363,
+      "stdout": "{\n  \"mechanical_pass\": true,\n  \"errors\": [],\n  \"registered_evidence\": 9,\n  \"registered_claims\": 4,\n  \"verified_calculations\": [\n    {\n      \"claim\": \"C002\",\n      \"operation\": \"difference\",\n      \"actual\": \"-0.009342971293236\",\n      \"expected\": \"-0.009343\",\n      \"tolerance\": \"5E-7\"\n    },\n    {\n      \"claim\": \"C003\",\n      \"operation\": \"difference\",\n      \"actual\": \"-0.00006763930101274943\",\n      \"expected\": \"-0.000067639\",\n      \"tolerance\": \"5E-10\"\n    }\n  ],\n  \"input_artifact_sha256\": {\n    \"manifest.json\": \"8ff8b64f07edfa8812087986c79ec18302813eca15cc1969b6275fd10ab51d0b\",\n    \"evidence.json\": \"0c849a62378f964dfbcf1d93114b7710a4df78d8fadd931d6fa94c5e797832b3\",\n    \"draft.md\": \"ac3d31373a11c1da9550d074350812cdf3631ada948b8f0d3e11b617c17616bd\"\n  },\n  \"limits\": \"Checks declared locators, values and calculations only; not scientific truth or full-text coverage.\",\n  \"checked_at_utc\": \"2026-11-20T12:52:07.023818+00:00\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "label": "topology-time-series-check",
+      "argv": [
+        "D:\\Anaconda3\\python.exe",
+        "-X",
+        "utf8",
+        "scripts/evidence_tools.py",
+        "check",
+        "--sources-root",
+        "cases\\topology-time-series\\input",
+        "--manifest",
+        "cases\\topology-time-series\\manifest.json",
+        "--evidence",
+        "cases\\topology-time-series\\evidence.json",
+        "--draft",
+        "cases\\topology-time-series\\draft.md",
+        "--out",
+        "cases\\topology-time-series\\verification.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.06509939999887138,
+      "stdout": "{\n  \"mechanical_pass\": true,\n  \"errors\": [],\n  \"registered_evidence\": 10,\n  \"registered_claims\": 4,\n  \"verified_calculations\": [\n    {\n      \"claim\": \"C002\",\n      \"operation\": \"difference\",\n      \"actual\": \"0.073195904493332\",\n      \"expected\": \"0.073196\",\n      \"tolerance\": \"5E-7\"\n    }\n  ],\n  \"input_artifact_sha256\": {\n    \"manifest.json\": \"cf998ad7357ea95459368ec176c435d237d7641d01e432efc7c654f98e099749\",\n    \"evidence.json\": \"092e682b5a5994275bd924abc76c2507a619c7ff805abbb07c413365c3834cdd\",\n    \"draft.md\": \"ea5af751429c04bdb835c712ee0ccc1f9b9383699820277bc5b66ec5ae3ae029\"\n  },\n  \"limits\": \"Checks declared locators, values and calculations only; not scientific truth or full-text coverage.\",\n  \"checked_at_utc\": \"2026-11-20T12:52:07.089421+00:00\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "label": "boundary-tests",
+      "argv": [
+        "D:\\Anaconda3\\python.exe",
+        "-X",
+        "utf8",
+        "scripts/test_evidence_tools.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.24084379999840166,
+      "stdout": "",
+      "stderr": "test_bad_json_pointer (__main__.EvidenceChecks.test_bad_json_pointer) ... ok\ntest_claim_text_not_next_to_marker (__main__.EvidenceChecks.test_claim_text_not_next_to_marker) ... ok\ntest_duplicate_csv_headers (__main__.EvidenceChecks.test_duplicate_csv_headers) ... ok\ntest_duplicate_evidence (__main__.EvidenceChecks.test_duplicate_evidence) ... ok\ntest_duplicate_json_keys_rejected (__main__.EvidenceChecks.test_duplicate_json_keys_rejected) ... ok\ntest_empty_claim_set (__main__.EvidenceChecks.test_empty_claim_set) ... ok\ntest_json_boolean_is_not_numeric (__main__.EvidenceChecks.test_json_boolean_is_not_numeric) ... ok\ntest_malformed_input_cli_writes_failure (__main__.EvidenceChecks.test_malformed_input_cli_writes_failure) ... ok\ntest_missing_evidence (__main__.EvidenceChecks.test_missing_evidence) ... ok\ntest_negative_tolerance (__main__.EvidenceChecks.test_negative_tolerance) ... ok\ntest_nonfinite_rejected (__main__.EvidenceChecks.test_nonfinite_rejected) ... ok\ntest_output_cannot_modify_sources (__main__.EvidenceChecks.test_output_cannot_modify_sources) ... ok\ntest_path_traversal (__main__.EvidenceChecks.test_path_traversal) ... ok\ntest_source_drift (__main__.EvidenceChecks.test_source_drift) ... ok\ntest_unknown_draft_marker (__main__.EvidenceChecks.test_unknown_draft_marker) ... ok\ntest_valid_numeric_text_and_json (__main__.EvidenceChecks.test_valid_numeric_text_and_json) ... ok\ntest_wrong_calculation (__main__.EvidenceChecks.test_wrong_calculation) ... ok\ntest_wrong_csv_value (__main__.EvidenceChecks.test_wrong_csv_value) ... ok\ntest_wrong_line_range (__main__.EvidenceChecks.test_wrong_line_range) ... ok\ntest_wrong_quote (__main__.EvidenceChecks.test_wrong_quote) ... ok\ntest_zero_denominator (__main__.EvidenceChecks.test_zero_denominator) ... ok\n\n----------------------------------------------------------------------\nRan 21 tests in 0.168s\n\nOK\n"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "comparison_type": "Retrospective static artifact comparison; not a randomized or time-efficiency experiment.",
+  "baseline_artifact": "cases/fpkd-ct/input/original_report.md",
+  "after_artifacts": [
+    "cases/fpkd-ct/evidence.json",
+    "cases/fpkd-ct/draft.md",
+    "cases/fpkd-ct/verification.json"
+  ],
+  "selected_claims": [
+    "C002",
+    "C003",
+    "C004"
+  ],
+  "metric_definition": "For the three E_PUR_001-vs-C0 metric deltas (SSIM, PSNR, MAE), count whether each has machine-readable source locator, explicit operation and tolerance, and a successful recomputation. Generic filename references do not meet this narrow criterion.",
+  "baseline": {
+    "selected_claim_count": 3,
+    "claims_with_executable_provenance": 0,
+    "readable_metric_delta_table_exists": true,
+    "writing_seconds": null,
+    "scientific_error_count": null
+  },
+  "after": {
+    "selected_claim_count": 3,
+    "claims_with_executable_provenance": 3,
+    "readable_metric_delta_table_exists": true,
+    "writing_seconds": null,
+    "scientific_error_count": null
+  },
+  "assessment": "AI-assisted inspection of actual artifacts; the original rounded deltas are not counted as errors. This metric measures added audit structure, not scientific quality or time saved.",
+  "source_table_rows": [
+    {
+      "line": 20,
+      "text": "| E_PUR_001 | 39.3586 | 0.933470 | 0.007569 |"
+    },
+    {
+      "line": 28,
+      "text": "| E_PUR_001 | -0.0236 | +0.001331 | +0.000051 |"
+    }
+  ]
+}

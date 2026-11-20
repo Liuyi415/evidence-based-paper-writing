@@ -1,0 +1,23 @@
+[
+  {
+    "path": "D:\\Projects\\topology-time-series\\reports\\stage1-persistence\\README.md",
+    "sha256": "2712c562230e35faeaba4973146f89cd8a28bc08fa3d6b9f9a9ac8b4c5d3aadc",
+    "title": "# 第一阶段：从过滤过程读懂条形码与持久图",
+    "date_line": "日期：2026年11月2日。目标：对同一组20个圆周点，将过滤过程中发生的事件，与H0/H1条形码、持久图一一对应。",
+    "limit": "Existing project report, not proof of manual PPT authorship or measured work duration."
+  },
+  {
+    "path": "D:\\Projects\\topology-time-series\\reports\\stage2-noise\\README.md",
+    "sha256": "49cfae1b8eaec7953bc4b5b130305370d88a3dd5d3fda34ae13ddee42dd51708",
+    "title": "# 第二阶段：加噪之后，持久特征怎样变化？",
+    "date_line": "日期：2026年11月2日。问题：当信号逐渐受噪声干扰时，干净圆周点云中的主要H1环是否仍可辨认？是否会出现其他短寿命环？",
+    "limit": "Existing project report, not proof of manual PPT authorship or measured work duration."
+  },
+  {
+    "path": "D:\\Projects\\topology-time-series\\reports\\stage3-classical-vs-topology\\README.md",
+    "sha256": "8599107d8c38cce4ecafef70043cb0e0f9cd1139629b208af701309376b4b622",
+    "title": "# 第三阶段：自相关、功率谱与持久同调看的是同一条序列的什么信息？",
+    "date_line": "日期：2026年11月3日。目标：把拓扑特征与两个熟悉的时间序列工具放在一起观察，区分它们描述的信息，不比较分类或预测性能。",
+    "limit": "Existing project report, not proof of manual PPT authorship or measured work duration."
+  }
+]

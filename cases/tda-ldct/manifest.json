@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-11-09T13:22:17.062793+00:00",
+  "files": [
+    {
+      "path": "branch_identity.csv",
+      "bytes": 6095,
+      "sha256": "89a81ca8aed99738bd902114ced992b3fd07c6cd9ab32a2c28dd0435fe5c4d7d"
+    },
+    {
+      "path": "decision.json",
+      "bytes": 2783,
+      "sha256": "69a0712067e1e05c0beeb4fb96ddcc78c2ea9806f39549171509ef596b660436"
+    },
+    {
+      "path": "frozen_method.md",
+      "bytes": 1244,
+      "sha256": "4777064576a22c779c3b640dde7bb42cf62ecbb6cf9e037fdc308e06a7a118ee"
+    },
+    {
+      "path": "image_metrics.csv",
+      "bytes": 1416,
+      "sha256": "f4b80e3d9efd2fd94525596aea6a7279a5685166e70d8b879cdc2ce1186f0fef"
+    }
+  ]
+}

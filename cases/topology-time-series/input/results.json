@@ -1,0 +1,97 @@
+{
+  "signals": [
+    {
+      "signal": "纯正弦",
+      "acf_lag_10": 0.027451093542065493,
+      "acf_lag_40": 0.9999999999999998,
+      "dominant_frequency_cycles_per_sample": 0.025,
+      "period_at_peak_samples": 40.0,
+      "spectral_peak_share": 1.0,
+      "spectral_entropy_nats": 0.0,
+      "finite_h1_count": 1,
+      "h1_max_lifetime": 1.62509486079216,
+      "h1_total_lifetime": 1.62509486079216,
+      "embedding_dimension": 2,
+      "delay": 10,
+      "point_count": 80
+    },
+    {
+      "signal": "含噪正弦",
+      "acf_lag_10": 0.0343861495781024,
+      "acf_lag_40": 0.8515854300235641,
+      "dominant_frequency_cycles_per_sample": 0.025,
+      "period_at_peak_samples": 40.0,
+      "spectral_peak_share": 0.8637174204252854,
+      "spectral_entropy_nats": 0.9896674329137491,
+      "finite_h1_count": 13,
+      "h1_max_lifetime": 0.6431528031826019,
+      "h1_total_lifetime": 1.0896104872226715,
+      "embedding_dimension": 2,
+      "delay": 10,
+      "point_count": 80
+    },
+    {
+      "signal": "方波",
+      "acf_lag_10": 0.043478260869565216,
+      "acf_lag_40": 1.0,
+      "dominant_frequency_cycles_per_sample": 0.025,
+      "period_at_peak_samples": 40.0,
+      "spectral_peak_share": 0.8122381939879425,
+      "spectral_entropy_nats": 0.78899696597379,
+      "finite_h1_count": 1,
+      "h1_max_lifetime": 0.8284270763397217,
+      "h1_total_lifetime": 0.8284270763397217,
+      "embedding_dimension": 2,
+      "delay": 10,
+      "point_count": 80
+    },
+    {
+      "signal": "双频准周期",
+      "acf_lag_10": -0.09686269519250387,
+      "acf_lag_40": 0.6286390787959272,
+      "dominant_frequency_cycles_per_sample": 0.025,
+      "period_at_peak_samples": 40.0,
+      "spectral_peak_share": 0.8053872569182509,
+      "spectral_entropy_nats": 0.76020538611556,
+      "finite_h1_count": 16,
+      "h1_max_lifetime": 0.4972478151321411,
+      "h1_total_lifetime": 1.8448229730129242,
+      "embedding_dimension": 2,
+      "delay": 10,
+      "point_count": 80
+    },
+    {
+      "signal": "白噪声",
+      "acf_lag_10": -0.01969090396983641,
+      "acf_lag_40": -0.018996495932408774,
+      "dominant_frequency_cycles_per_sample": 0.2375,
+      "period_at_peak_samples": 4.2105263157894735,
+      "spectral_peak_share": 0.037483910795771784,
+      "spectral_entropy_nats": 4.393823062484779,
+      "finite_h1_count": 16,
+      "h1_max_lifetime": 0.26498502492904663,
+      "h1_total_lifetime": 1.698290765285492,
+      "embedding_dimension": 2,
+      "delay": 10,
+      "point_count": 80
+    }
+  ],
+  "configuration": {
+    "length": 240,
+    "period_samples": 40,
+    "delay": 10,
+    "embedding_dimension": 2,
+    "max_cloud_points": 80,
+    "acf": "centered autocorrelation divided by the N-lag overlap count, normalized to lag zero",
+    "spectrum": "scipy periodogram; fs=1; boxcar; constant detrend before call",
+    "persistence": "Vietoris-Rips, Euclidean metric, maxdim=1, coefficient field F2",
+    "normalization": "subtract sequence mean; no amplitude scaling"
+  },
+  "versions": {
+    "numpy": "1.26.4",
+    "scipy": "1.17.1",
+    "matplotlib": "3.11.2",
+    "ripser": "0.6.14"
+  },
+  "limitations": "Five synthetic signals; no labels, classifier, statistical inference or real-data validation."
+}

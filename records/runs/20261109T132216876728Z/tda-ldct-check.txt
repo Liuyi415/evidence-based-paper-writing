@@ -1,0 +1,35 @@
+ARGV: ["D:\\Anaconda3\\python.exe", "-X", "utf8", "scripts/evidence_tools.py", "check", "--sources-root", "cases\\tda-ldct\\input", "--manifest", "cases\\tda-ldct\\manifest.json", "--evidence", "cases\\tda-ldct\\evidence.json", "--draft", "cases\\tda-ldct\\draft.md", "--out", "cases\\tda-ldct\\verification.json"]
+EXIT: 0
+ELAPSED_SECONDS: 0.066840
+STDOUT:
+{
+  "mechanical_pass": true,
+  "errors": [],
+  "registered_evidence": 9,
+  "registered_claims": 4,
+  "verified_calculations": [
+    {
+      "claim": "C002",
+      "operation": "difference",
+      "actual": "-0.009342971293236",
+      "expected": "-0.009343",
+      "tolerance": "5E-7"
+    },
+    {
+      "claim": "C003",
+      "operation": "difference",
+      "actual": "-0.00006763930101274943",
+      "expected": "-0.000067639",
+      "tolerance": "5E-10"
+    }
+  ],
+  "input_artifact_sha256": {
+    "manifest.json": "8ff8b64f07edfa8812087986c79ec18302813eca15cc1969b6275fd10ab51d0b",
+    "evidence.json": "0c849a62378f964dfbcf1d93114b7710a4df78d8fadd931d6fa94c5e797832b3",
+    "draft.md": "ac3d31373a11c1da9550d074350812cdf3631ada948b8f0d3e11b617c17616bd"
+  },
+  "limits": "Checks declared locators, values and calculations only; not scientific truth or full-text coverage.",
+  "checked_at_utc": "2026-11-09T13:22:17.128764+00:00"
+}
+
+STDERR:

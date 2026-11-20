@@ -1,0 +1,83 @@
+{
+  "captured_at_utc": "2026-11-09T13:21:06.611632+00:00",
+  "sources": [
+    {
+      "case": "fpkd-ct",
+      "original": "D:\\Projects\\FPKD-CT\\experiments\\stability_ablation_20261109_v1\\summary.json",
+      "snapshot": "cases/fpkd-ct/input/summary.json",
+      "sha256": "55224475efa4e42b4d6e8e788fac1af176a119355be52737597dbf5da95d48ed"
+    },
+    {
+      "case": "fpkd-ct",
+      "original": "D:\\Projects\\FPKD-CT\\experiments\\stability_ablation_20261109_v1\\REPORT.md",
+      "snapshot": "cases/fpkd-ct/input/original_report.md",
+      "sha256": "384e9a09fdf8dbc8fa6fcb8960656d21859c409e09320b4ee30dabede23ca157"
+    },
+    {
+      "case": "fpkd-ct",
+      "original": "D:\\Projects\\FPKD-CT\\experiments\\stability_ablation_20261109_v1\\PROTOCOL.md",
+      "snapshot": "cases/fpkd-ct/input/protocol.md",
+      "sha256": "dcf2e04556930b66c5c0b11edd6d16e51e09d9ababc111efad9bed9256784dd8"
+    },
+    {
+      "case": "fpkd-ct",
+      "original": "D:\\Projects\\FPKD-CT\\docs\\EXPERIMENT_SUMMARY_20261109.md",
+      "snapshot": "cases/fpkd-ct/input/project_summary.md",
+      "sha256": "c001533e8b883c33f1533001cf07a98f3011b36fa2e298d7f40bdb614ba759e6"
+    },
+    {
+      "case": "tda-ldct",
+      "original": "D:\\Projects\\tda-learning\\method_freeze_v1_20261015\\FROZEN_METHOD_v1.md",
+      "snapshot": "cases/tda-ldct/input/frozen_method.md",
+      "sha256": "4777064576a22c779c3b640dde7bb42cf62ecbb6cf9e037fdc308e06a7a118ee"
+    },
+    {
+      "case": "tda-ldct",
+      "original": "D:\\Projects\\tda-learning\\method_freeze_v1_20261015\\eval30\\l310_image_metrics_summary.csv",
+      "snapshot": "cases/tda-ldct/input/image_metrics.csv",
+      "sha256": "f4b80e3d9efd2fd94525596aea6a7279a5685166e70d8b879cdc2ce1186f0fef"
+    },
+    {
+      "case": "tda-ldct",
+      "original": "D:\\Projects\\tda-learning\\method_freeze_v1_20261015\\eval30\\branch_identity_summary.csv",
+      "snapshot": "cases/tda-ldct/input/branch_identity.csv",
+      "sha256": "89a81ca8aed99738bd902114ced992b3fd07c6cd9ab32a2c28dd0435fe5c4d7d"
+    },
+    {
+      "case": "tda-ldct",
+      "original": "D:\\Projects\\tda-learning\\method_freeze_v1_20261015\\eval30\\final_gated_trust_decision.json",
+      "snapshot": "cases/tda-ldct/input/decision.json",
+      "sha256": "69a0712067e1e05c0beeb4fb96ddcc78c2ea9806f39549171509ef596b660436"
+    },
+    {
+      "case": "topology-time-series",
+      "original": "D:\\Projects\\topology-time-series\\reports\\stage3-classical-vs-topology\\summary.csv",
+      "snapshot": "cases/topology-time-series/input/summary.csv",
+      "sha256": "bb507a33daf127baaf4c0466894282869743ee42b365a662ed9e9b093e30d481"
+    },
+    {
+      "case": "topology-time-series",
+      "original": "D:\\Projects\\topology-time-series\\reports\\stage3-classical-vs-topology\\README.md",
+      "snapshot": "cases/topology-time-series/input/original_report.md",
+      "sha256": "8599107d8c38cce4ecafef70043cb0e0f9cd1139629b208af701309376b4b622"
+    },
+    {
+      "case": "topology-time-series",
+      "original": "D:\\Projects\\topology-time-series\\reports\\stage3-classical-vs-topology\\results.json",
+      "snapshot": "cases/topology-time-series/input/results.json",
+      "sha256": "17078b570de4a3b82b7efb716d62f6edeab72c1e0e5707804aefd0df881284f7"
+    },
+    {
+      "case": "fpkd-ct",
+      "original": "D:\\Projects\\FPKD-CT\\results\\figures\\stability_ablation_20261109_v1\\external_patient_metrics.png",
+      "snapshot": "assets/fpkd-existing-metrics.png",
+      "sha256": "9a09de7873cf3ce3405bb0b13bac96d12c53c66b8faddddce7d04c7587445f1d"
+    },
+    {
+      "case": "topology-time-series",
+      "original": "D:\\Projects\\topology-time-series\\reports\\stage3-classical-vs-topology\\01_method_comparison.png",
+      "snapshot": "cases/topology-time-series/input/01_method_comparison.png",
+      "sha256": "c0ef58c22900cc4c12ad370871c6e78fb5430a895af6e8d8dfee9e87d06b8131"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "revised_at_utc": "2026-11-09T13:52:08.159429+00:00",
+  "scope": "Student first-person revision of report, README, ledger, result cards and review notes.",
+  "checks": {
+    "markdown_links": "passed",
+    "selected_source_pairs_unchanged": 13,
+    "all_three_verified_case_inputs_unchanged": true
+  },
+  "scientific_artifacts": "Original source snapshots, claim registries, scientific draft texts and previous execution logs preserved.",
+  "report_sha256": "c74b3f7f91bf2a0946fc309b56cbdf218935c165bb454105a786c965cb188a7f"
+}

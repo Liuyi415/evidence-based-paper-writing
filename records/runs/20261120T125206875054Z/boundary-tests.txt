@@ -1,0 +1,32 @@
+ARGV: ["D:\\Anaconda3\\python.exe", "-X", "utf8", "scripts/test_evidence_tools.py"]
+EXIT: 0
+ELAPSED_SECONDS: 0.240844
+STDOUT:
+
+STDERR:
+test_bad_json_pointer (__main__.EvidenceChecks.test_bad_json_pointer) ... ok
+test_claim_text_not_next_to_marker (__main__.EvidenceChecks.test_claim_text_not_next_to_marker) ... ok
+test_duplicate_csv_headers (__main__.EvidenceChecks.test_duplicate_csv_headers) ... ok
+test_duplicate_evidence (__main__.EvidenceChecks.test_duplicate_evidence) ... ok
+test_duplicate_json_keys_rejected (__main__.EvidenceChecks.test_duplicate_json_keys_rejected) ... ok
+test_empty_claim_set (__main__.EvidenceChecks.test_empty_claim_set) ... ok
+test_json_boolean_is_not_numeric (__main__.EvidenceChecks.test_json_boolean_is_not_numeric) ... ok
+test_malformed_input_cli_writes_failure (__main__.EvidenceChecks.test_malformed_input_cli_writes_failure) ... ok
+test_missing_evidence (__main__.EvidenceChecks.test_missing_evidence) ... ok
+test_negative_tolerance (__main__.EvidenceChecks.test_negative_tolerance) ... ok
+test_nonfinite_rejected (__main__.EvidenceChecks.test_nonfinite_rejected) ... ok
+test_output_cannot_modify_sources (__main__.EvidenceChecks.test_output_cannot_modify_sources) ... ok
+test_path_traversal (__main__.EvidenceChecks.test_path_traversal) ... ok
+test_source_drift (__main__.EvidenceChecks.test_source_drift) ... ok
+test_unknown_draft_marker (__main__.EvidenceChecks.test_unknown_draft_marker) ... ok
+test_valid_numeric_text_and_json (__main__.EvidenceChecks.test_valid_numeric_text_and_json) ... ok
+test_wrong_calculation (__main__.EvidenceChecks.test_wrong_calculation) ... ok
+test_wrong_csv_value (__main__.EvidenceChecks.test_wrong_csv_value) ... ok
+test_wrong_line_range (__main__.EvidenceChecks.test_wrong_line_range) ... ok
+test_wrong_quote (__main__.EvidenceChecks.test_wrong_quote) ... ok
+test_zero_denominator (__main__.EvidenceChecks.test_zero_denominator) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 0.168s
+
+OK

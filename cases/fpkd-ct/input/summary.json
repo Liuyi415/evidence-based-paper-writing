@@ -1,0 +1,176 @@
+{
+  "state": "completed",
+  "test_accessed": false,
+  "selection_used": false,
+  "train_patients": [
+    "L067",
+    "L310"
+  ],
+  "external_patients": [
+    "L096",
+    "L109"
+  ],
+  "selection_patient_not_used": "L506",
+  "models": {
+    "C0": {
+      "run": "C_alpha000_pair2_seed20261106_20261108",
+      "checkpoint_sha256": "4263a2811f49a53abedcf58ab1f20604692b6c9430c7b15a4aac2325190edb7a",
+      "metrics_slice_mean": {
+        "psnr": 39.38218253263506,
+        "ssim": 0.9321387492196264,
+        "mae": 0.0075180195643985755,
+        "rmse": 0.010934324779568455
+      },
+      "slices": 1141,
+      "delta_vs_C0_external": {
+        "psnr": 0.0,
+        "ssim": 0.0,
+        "mae": 0.0,
+        "rmse": 0.0
+      }
+    },
+    "E_PUR_001": {
+      "run": "E_internal_purified_pair2_alpha0001_20261108_v1",
+      "checkpoint_sha256": "21aefa9c4cce66c05c2e0895c399da65de65dbd02d617754ff8544083c1276e6",
+      "metrics_slice_mean": {
+        "psnr": 39.35862339388345,
+        "ssim": 0.9334697116457645,
+        "mae": 0.007568650363215053,
+        "rmse": 0.01096275565246231
+      },
+      "slices": 1141,
+      "delta_vs_C0_external": {
+        "psnr": -0.023559138751615194,
+        "ssim": 0.0013309624261381714,
+        "mae": 5.063079881647767e-05,
+        "rmse": 2.8430872893853848e-05
+      }
+    },
+    "E_PUR_01": {
+      "run": "E_internal_purified_pair2_alpha001_20261108_v1",
+      "checkpoint_sha256": "aa955ad58acfecd522805a4581042309176216ead3e41e179735c620a426b2b2",
+      "metrics_slice_mean": {
+        "psnr": 39.276720614493875,
+        "ssim": 0.9324245501624148,
+        "mae": 0.0076683760202752175,
+        "rmse": 0.011073411660276289
+      },
+      "slices": 1141,
+      "delta_vs_C0_external": {
+        "psnr": -0.105461918141188,
+        "ssim": 0.0002858009427884056,
+        "mae": 0.00015035645587664192,
+        "rmse": 0.00013908688070783312
+      }
+    },
+    "A50": {
+      "run": "A50_matched_spatial_ablation_20261109_v1",
+      "checkpoint_sha256": "f40f41c9a190ba2a63ea84d80541b367d3cf5fd51b403b489a41a2bdc57047c3",
+      "metrics_slice_mean": {
+        "psnr": 39.43725691612307,
+        "ssim": 0.9333044653984023,
+        "mae": 0.007498505479686606,
+        "rmse": 0.010859723849054065
+      },
+      "slices": 1141,
+      "delta_vs_C0_external": {
+        "psnr": 0.055074383488005196,
+        "ssim": 0.0011657161787759218,
+        "mae": -1.95140847119692e-05,
+        "rmse": -7.460093051439055e-05
+      }
+    }
+  },
+  "patient_summary": {
+    "L096": {
+      "C0": {
+        "psnr": 39.49729282201466,
+        "ssim": 0.9333331073695411,
+        "mae": 0.0075224894030442154,
+        "rmse": 0.010834392363166672,
+        "slices": 823
+      },
+      "E_PUR_001": {
+        "psnr": 39.47549353932879,
+        "ssim": 0.934615202554207,
+        "mae": 0.007566101930672271,
+        "rmse": 0.010859985199602016,
+        "slices": 823
+      },
+      "E_PUR_01": {
+        "psnr": 39.400881042774074,
+        "ssim": 0.9338028830687402,
+        "mae": 0.007656400842108989,
+        "rmse": 0.010961085706734949,
+        "slices": 823
+      },
+      "A50": {
+        "psnr": 39.556184747740105,
+        "ssim": 0.9346267374553482,
+        "mae": 0.00749412390972963,
+        "rmse": 0.010753863198377027,
+        "slices": 823
+      }
+    },
+    "L109": {
+      "C0": {
+        "psnr": 39.08427131200799,
+        "ssim": 0.9290476902341551,
+        "mae": 0.0075064513970861165,
+        "rmse": 0.011192954901262379,
+        "slices": 318
+      },
+      "E_PUR_001": {
+        "psnr": 39.05615757721199,
+        "ssim": 0.9305051235399528,
+        "mae": 0.007575245834858796,
+        "rmse": 0.01122873075530514,
+        "slices": 318
+      },
+      "E_PUR_01": {
+        "psnr": 38.95538717903913,
+        "ssim": 0.928857355250762,
+        "mae": 0.007699368383894106,
+        "rmse": 0.011364116879661575,
+        "slices": 318
+      },
+      "A50": {
+        "psnr": 39.12946570410792,
+        "ssim": 0.9298823587856144,
+        "mae": 0.007509845203191615,
+        "rmse": 0.011133696539328284,
+        "slices": 318
+      }
+    }
+  },
+  "elapsed_seconds": 233.08552690000215,
+  "matched_L506": {
+    "C0": {
+      "psnr": 40.87466727019019,
+      "ssim": 0.9481156948070173,
+      "mae": 0.006062872563536828,
+      "rmse": 0.009175940050720408,
+      "prediction_mae_vs_full": 0.0
+    },
+    "A50": {
+      "psnr": 40.905326482273026,
+      "ssim": 0.9490644136669869,
+      "mae": 0.0060641129915744215,
+      "rmse": 0.009145008889491007,
+      "prediction_mae_vs_full": 0.0
+    },
+    "A50_minus_C0": {
+      "psnr": 0.030659212082838394,
+      "ssim": 0.0009487188599696106,
+      "mae": 1.240428037593659e-06,
+      "rmse": -3.0931161229401025e-05
+    }
+  },
+  "interpretation": {
+    "state": "reviewed",
+    "stability": "E-low purified teacher improves SSIM over C0 on L506 and on the two external patients, but remains lower in PSNR and higher in MAE; the direction is consistent but not a comprehensive improvement.",
+    "dual_branch": "Matched spatial-only A50 exceeds the current B/C0 spatial-spectral model on L506 and on the two external patients. The current Fourier branch is therefore not supported as a beneficial component under this protocol.",
+    "recommendation": "Pause D2 and revise the student backbone. Treat A50 as the current stronger baseline; test a capacity-matched or parameter-matched spectral branch only after fixing spatial training and validation protocol. Revalidate E-low against A50 before attributing any teacher gain.",
+    "limitations": "Only L096/L109 external validation patients; same two patients trained the models; no L333 test access; one seed; metrics use stored intensity and unknown HU mapping; no clinician reader study."
+  }
+}

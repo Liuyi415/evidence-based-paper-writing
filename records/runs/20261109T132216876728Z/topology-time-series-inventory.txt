@@ -1,0 +1,7 @@
+ARGV: ["D:\\Anaconda3\\python.exe", "-X", "utf8", "scripts/evidence_tools.py", "inventory", "--sources-root", "cases\\topology-time-series\\input", "--out", "cases\\topology-time-series\\manifest.json"]
+EXIT: 0
+ELAPSED_SECONDS: 0.063093
+STDOUT:
+INVENTORY files=3 output=cases\topology-time-series\manifest.json
+
+STDERR:

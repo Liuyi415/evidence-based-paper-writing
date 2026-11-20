@@ -1,0 +1,63 @@
+{
+  "decision": "GATED_TRUST_SUPPORTED_COLLATERAL_REDUCED",
+  "interpretation": "Under comparable topology exposure, GATED TRUST retains identity-stable breached-feature benefit and reduces, but does not fully eliminate, Top5 safe-feature collateral error.",
+  "scientific_status": "L310 single-patient method-development descriptive evaluation; not patient-level inference and not final test.",
+  "criterion_exposure_fair": true,
+  "v1_total_normalized_exposure": 1.4999999961077917,
+  "gated_total_normalized_exposure": 1.4999999960082504,
+  "gated_to_v1_exposure_ratio": 0.9999999999336392,
+  "relative_exposure_difference": 6.63608429190348e-11,
+  "criterion_image_psnr_safe": true,
+  "control_psnr": 34.823811261478426,
+  "v1_psnr": 34.821814147441984,
+  "gated_psnr": 34.81446829018519,
+  "gated_minus_control_psnr": -0.009342971293236246,
+  "v1_pattern_reproduced": true,
+  "criterion_target_gain_retained": true,
+  "criterion_safe_collateral_reduced_vs_v1": true,
+  "criterion_safe_collateral_eliminated": false,
+  "strict_identity_available": true,
+  "strict_direction_support": true,
+  "top5_identity_stable": {
+    "v1": {
+      "n_breached_forward": 18,
+      "n_safe_forward": 239,
+      "breached_delta_error": -0.00013620323605007597,
+      "safe_delta_error": 0.00028196762795228836,
+      "breached_strict_delta_error": -0.00013620323605007597,
+      "safe_strict_delta_error": 0.00028196762795228836
+    },
+    "gated": {
+      "n_breached_forward": 19,
+      "n_safe_forward": 239,
+      "n_breached_bidirectional": 19,
+      "n_safe_bidirectional": 239,
+      "breached_delta_error": -0.00015595084742495887,
+      "safe_delta_error": 0.00021432832693953893,
+      "breached_strict_delta_error": -0.00015595084742495887,
+      "safe_strict_delta_error": 0.00021432832693953893
+    }
+  },
+  "safe_collateral_reduction_absolute": 6.763930101274943e-05,
+  "all_reliable_identity_stable": {
+    "v1_breached_delta_error": -0.00026003905705043246,
+    "v1_safe_delta_error": 0.00021324302254318474,
+    "gated_breached_delta_error": -0.0002507764952523368,
+    "gated_safe_delta_error": 0.0001572110520946994,
+    "target_gain_retained": true,
+    "safe_collateral_reduced_vs_v1": true
+  },
+  "global_h1_context": {
+    "control_q90_abs_error": 0.006777694037086087,
+    "v1_q90_abs_error": 0.006784467399120332,
+    "gated_q90_abs_error": 0.006799740148218058,
+    "control_q95_abs_error": 0.007263580278346417,
+    "v1_q95_abs_error": 0.007270248155844844,
+    "gated_q95_abs_error": 0.007285662309119581,
+    "control_top5_abs_error": 0.0048285878018329035,
+    "v1_top5_abs_error": 0.004704631159180092,
+    "gated_top5_abs_error": 0.004706583838713798
+  },
+  "L333_used": false,
+  "L506_used": false
+}
